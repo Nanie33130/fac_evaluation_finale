@@ -1,0 +1,247 @@
+@charset "UTF-8";
+body {
+  margin: 0;
+  background-color: #fff;
+}
+
+img {
+  width: 100%;
+}
+
+.cacherSprite {
+  width: 0;
+  height: 0;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.Icon {
+  /* Permet de redimensionner en changeant la font-size de l’icône */
+  width: 1em;
+  height: 1em;
+  /* Bel alignement visuel des icônes avec le texte */
+  vertical-align: -0.15em;
+  /* fill par défaut = valeur de la propriété couleur de son élément parent */
+  fill: currentColor;
+  /* Les paths et les strokes qui dépassent de la viewBox peuvent apparaître dans IE.
+       Si vous utilisez normalize.css, inutile de l’ajouter. */
+  overflow: hidden;
+}
+
+.menu {
+  height: 50px;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  color: #000;
+}
+
+.logo {
+  background-image: url("./logos/LogoRectangle.svg");
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 70%;
+}
+
+.menu .title {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 50px;
+  padding: 0 20px;
+  text-transform: uppercase;
+}
+
+.menu nav {
+  background: inherit;
+  font-size: 20px;
+  font-weight: bold;
+  height: 0;
+  overflow: hidden;
+  text-transform: uppercase;
+  transition: height .2s;
+}
+
+.menu nav > * {
+  display: block;
+  letter-spacing: 1px;
+  line-height: 2.5;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.menu nav input {
+  background: rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.menu .burger {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  color: inherit;
+  cursor: pointer;
+  font-family: 'Material Icons';
+  font-size: 30px;
+  line-height: 50px;
+  margin: 0;
+  outline: 0;
+  padding: 0;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 10px;
+  width: 50px;
+}
+
+.menu .burger:before {
+  content: 'menu';
+}
+
+.menu .burger:checked:before {
+  content: 'close';
+}
+
+.menu .burger:checked + nav {
+  height: calc(100vh - 50px);
+}
+
+p {
+  padding: 20px;
+}
+
+.header {
+  background-color: #fff;
+}
+
+.headerImg {
+  width: 100%;
+}
+
+.headerText {
+  color: #fbb730;
+  text-align: center;
+  width: 100%;
+}
+
+.logoHead {
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.zoneHead {
+  width: 320px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.coop {
+  width: 40%;
+  color: #e8ddcb;
+}
+
+.install {
+  width: 40%;
+  color: #b4d143;
+}
+
+.production {
+  width: 40%;
+  color: #fbb730;
+}
+
+.capital {
+  width: 40%;
+  color: #00b1ec;
+}
+
+.zone1, .zone3 {
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  color: #6e6f71;
+}
+
+.zone1Left, .zone3Left {
+  text-align: right;
+  background-image: url("../img/background.jpg");
+  background-size: 100%;
+}
+
+.zone1Right, .zone3Right {
+  text-align: left;
+}
+
+.zone2 {
+  background-color: #6e6f71;
+  color: #fff;
+  border-radius: 10px;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.zone4 {
+  background-color: #fbb730;
+  color: #000;
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.zone5 {
+  background-color: #fbb730;
+  color: #fff;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+}
+
+.zone5Img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.zone6 {
+  background-color: #b4d143;
+  color: #6e6f71;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+}
+
+.zone6Img {
+  width: 50%;
+  margin: 0 auto;
+}
+
+.zone7 {
+  background-color: #fff;
+  color: #6e6f71;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+}
+
+.zone7Img {
+  width: 50%;
+  margin: 0 auto;
+  font-size: 80%;
+}
+
+@media all and (min-width: 1170px) {
+  .logo {
+    background-image: url("../logos/Logo.svg");
+  }
+}
+
+/*# sourceMappingURL=mon_site.css.map */

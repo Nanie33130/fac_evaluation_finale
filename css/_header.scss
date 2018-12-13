@@ -1,0 +1,45 @@
+.header{
+    background-color: $blanc;
+}
+
+.headerImg{
+    width: 100%;
+}
+
+.headerText{
+    color: $orange;
+    text-align: center;
+    width: 100%;
+}
+
+.logoHead{
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.zoneHead{
+    width: 320px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    flex-wrap: wrap;
+    text-align: center;
+}
+.coop{
+    width: 40%;
+    color: $beige;
+}
+.install{
+    width: 40%;
+    color: $vert;
+}
+.production{
+    width: 40%;
+    color: $orange;
+}
+.capital{
+    width: 40%;
+    color: $bleu;
+}
