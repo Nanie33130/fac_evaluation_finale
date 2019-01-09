@@ -1,45 +1,38 @@
-.header{
-    background-color: $blanc;
-}
-
-.headerImg{
+.head{
     width: 100%;
+    background-image: url('../img/background.jpg');
 }
-
-.headerText{
-    color: $orange;
-    text-align: center;
-    width: 100%;
-}
-
-.logoHead{
-    width: 10%;
-    margin-left: auto;
-    margin-right: auto;
-}
-.zoneHead{
-    width: 320px;
+.menuHeader{
+    height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-left: auto;
     margin-right: auto;
-    flex-wrap: wrap;
-    text-align: center;
+    background-color: $blanc;
 }
-.coop{
-    width: 40%;
-    color: $beige;
+.logoHead{
+    width: 45%;
+    margin-left: 5px;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
-.install{
-    width: 40%;
-    color: $vert;
+
+.menu{
+    background-color: $vert;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: auto;
+    margin-bottom: auto;    
 }
-.production{
-    width: 40%;
-    color: $orange;
+
+.burger{
+    fill: $blanc;
+    width: 50px;
+    height: 50px;
+    margin: auto;
 }
-.capital{
-    width: 40%;
-    color: $bleu;
-}
+
+

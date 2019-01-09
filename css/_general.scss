@@ -1,37 +1,16 @@
-$orange : #fbb730;
-$vert : #b4d143;
-$beige : #e8ddcb;
-$gris : #6e6f71;
-$bleu : #00b1ec;
-$blanc : #fff;
-$noir: #000;
 body{
-    margin: 0;
     background-color: $blanc;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    width: 100%;
 }
 
 img{
     width: 100%;
 }
 
-.cacherSprite{
-    width: 0;
-    height: 0;
-}
 a{
-  color:#fff;
-  text-decoration:none;
+    text-decoration:none;
 }
-
-
-.Icon {
-    /* Permet de redimensionner en changeant la font-size de l’icône */
-    width: 1em; height: 1em;
-    /* Bel alignement visuel des icônes avec le texte */
-    vertical-align: -0.15em;
-    /* fill par défaut = valeur de la propriété couleur de son élément parent */
-    fill: currentColor;
-    /* Les paths et les strokes qui dépassent de la viewBox peuvent apparaître dans IE.
-       Si vous utilisez normalize.css, inutile de l’ajouter. */
-    overflow: hidden;
-  }
